@@ -1,10 +1,9 @@
 # start with a base image
-FROM ubuntu:14.10
+FROM ubuntu:14.04
 
 MAINTAINER Real Python <info@realpython.com>
 
-# initial update
-RUN apt-get update -q
+
 
 # install wget, java, and mini-httpd web server
 RUN apt-get install -yq wget
